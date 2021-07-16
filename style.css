@@ -145,7 +145,7 @@ body {
   visibility: hidden;
   overflow: hidden;
   height: 0;
-  width: 90%;
+  width: 95%;
   padding-bottom: 0;
   transition: visibility 0s 0.3s, height 0.3s 0s, padding-top 0.3s 0s;
 }
@@ -182,10 +182,11 @@ body {
 
   .card-title {
     text-align: left;
+    margin: 1rem 0;
   }
 
   .card-content {
-    padding-bottom: 4rem;
+    padding: 3rem 1rem;
   }
 
   .card-image {
@@ -198,17 +199,16 @@ body {
   }
 
   .desktop .illustrations {
-    background-image: url("./images/illustration-woman-online-desktop.svg"),
-      url("./images/bg-pattern-desktop.svg");
-    background-size: 90%, 150%;
+    background-image: url('./images/illustration-woman-online-desktop.svg'), url('./images/bg-pattern-desktop.svg');
+    background-size: 110%, 250%;
     background-repeat: no-repeat, no-repeat;
-    background-position: -3rem 55%, 140% 60%;
+    background-position: -4rem 60%, 105% 65%;
     height: 100%;
   }
 
   .desktop-box {
     position: absolute;
-    top: 44%;
+    top: 48%;
     left: -5.75rem;
   }
 
