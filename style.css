@@ -116,6 +116,11 @@ body {
   transition: color 0.3s, font-weight 0.3s;
 }
 
+.accordion-title:hover{
+  cursor: pointer;
+  color: var(--accent-text);
+}
+
 .accordion-button {
   background: none;
   width: 1em;

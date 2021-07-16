@@ -23,6 +23,6 @@ function toggle(e){
 
 }
 
-document.querySelectorAll('.accordion-button').forEach(button => {
+document.querySelectorAll('.accordion-title').forEach(button => {
     {button.addEventListener('click', toggle)}
 })
