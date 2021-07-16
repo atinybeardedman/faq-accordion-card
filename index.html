@@ -9,6 +9,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="style.css">
 
     <title>Frontend Mentor | FAQ Accordion Card</title>
 
@@ -17,19 +18,20 @@
     <main>
       <section class="card">
         <div class="card-image">
-          <picture class="illustration">
-            <source srcset="./images/illustration-woman-online-desktop.svg" media="(min-width:768px)" alt="Woman standing at a computer">
-            <source srcset="./images/illustration-woman-online-mobile.svg" alt="Woman standing at a computer">
-          </picture>
-          <picture class="background">
-            <source srcset="./images/bg-pattern-desktop.svg" media="(min-width:768px)">
-            <source srcset="./images/bg-pattern-mobile.svg">
-          </picture>
+          <div class="illustration">
+            <!-- <img src="./images/illustration-woman-online-desktop.svg" alt="Woman standing at a computer"> -->
+            <img src="./images/illustration-woman-online-mobile.svg" alt="Woman standing at a computer">
+          </div>
+          <div class="shadow">
+            <!-- <img src="./images/bg-pattern-desktop.svg"> -->
+            <img src="./images/bg-pattern-mobile.svg">
+          </div>
           <picture class="desktop-box">
             <source srcset="./images/illustration-box-desktop.svg" media="(min-width:768px)">
           </picture>
         </div>
         <div class="card-content">
+          <header class="card-title">FAQ</header>
           <ul class="accordion">
             <li class="accordion-item">
               <div class="accordion-title">
