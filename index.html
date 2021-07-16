@@ -9,27 +9,22 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="./index.js" defer></script>
 
     <title>Frontend Mentor | FAQ Accordion Card</title>
-
   </head>
   <body>
     <main>
       <section class="card">
         <div class="card-image">
-          <div class="illustration">
-            <!-- <img src="./images/illustration-woman-online-desktop.svg" alt="Woman standing at a computer"> -->
-            <img src="./images/illustration-woman-online-mobile.svg" alt="Woman standing at a computer">
+          <div class="container">
+            <div class="illustrations"></div>
+            <div class="desktop-box">
+              <img src="/images/illustration-box-desktop.svg" alt="" srcset="">
+            </div>
           </div>
-          <div class="shadow">
-            <!-- <img src="./images/bg-pattern-desktop.svg"> -->
-            <img src="./images/bg-pattern-mobile.svg">
-          </div>
-          <picture class="desktop-box">
-            <source srcset="./images/illustration-box-desktop.svg" media="(min-width:768px)">
-          </picture>
+        
         </div>
         <div class="card-content">
           <header class="card-title">FAQ</header>
@@ -45,8 +40,8 @@
               </div>
               <div class="accordion-content">
                 <p>
-                  You can invite up to 2 additional users on the Free plan. There is
-                  no limit on team members for the Premium plan.
+                  You can invite up to 2 additional users on the Free plan.
+                  There is no limit on team members for the Premium plan.
                 </p>
               </div>
             </li>
@@ -61,8 +56,8 @@
               </div>
               <div class="accordion-content">
                 <p>
-                  No more than 2GB. All files in your account must fit your allotted
-                  storage space.
+                  No more than 2GB. All files in your account must fit your
+                  allotted storage space.
                 </p>
               </div>
             </li>
@@ -75,32 +70,48 @@
               </div>
               <div class="accordion-content">
                 <p>
-                  Click “Forgot password” from the login page or “Change password” from your
-                  profile page. A reset link will be emailed to you. 
+                  Click “Forgot password” from the login page or “Change
+                  password” from your profile page. A reset link will be emailed
+                  to you.
                 </p>
               </div>
             </li>
             <li class="accordion-item">
               <div class="accordion-title">
-                <header class="question">Can I cancel my
-                  subscription?</header>
-                  <button class="accordion-button">
-                    <i></i>
-                  </button>
+                <header class="question">Can I cancel my subscription?</header>
+                <button class="accordion-button">
+                  <i></i>
+                </button>
               </div>
               <div class="accordion-content">
                 <p>
                   Yes! Send us a message and we’ll process your request no
-                  questions asked. Do you provide additional support? Chat and email support
-                  is available 24/7. Phone lines are open during normal business hours.
+                  questions asked.
+                </p>
+              </div>
+            </li>
+            <li class="accordion-item">
+              <div class="accordion-title">
+                <header class="question">
+                  Do you provide additional support?
+                </header>
+                <button class="accordion-button">
+                  <i></i>
+                </button>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  Chat and email support is available 24/7. Phone lines are open
+                  during normal business hours.
                 </p>
               </div>
             </li>
           </ul>
         </div>
       </section>
+     
     </main>
-   
+
     <footer>
       <div class="attribution">
         Challenge by
