@@ -108,7 +108,7 @@ main {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      transition: color 0.5s, font-weight 0.5s;
+      transition: color 0.3s, font-weight 0.3s;
   }
 
   .accordion-button {
@@ -128,14 +128,21 @@ main {
     height: 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    transition: transform 0.5s;
+    transition: transform 0.3s;
   }
   
   .accordion-content {
       visibility: hidden;
       overflow: hidden;
       height: 0;
-      transition: visibility 0s 0s, height 0.5s;
+      width: 90%;
+      padding-bottom: 0;
+      transition: visibility 0s 0.3s, height 0.3s 0s, padding-top 0.3s 0s;
+  }
+
+  .accordion-content p {
+      margin-bottom: 0;
+      line-height: 1.5;
   }
 
   .accordion-item.opened .accordion-title{
@@ -148,8 +155,7 @@ main {
   }
 
   .accordion-item.opened .accordion-content {
-      /* height: auto; */
       visibility: visible;
-      padding-top: 1em;
-      color: var(--neutral-text-2)
+      color: var(--neutral-text-2);
+      transition: visibility 0s 0s, height 0.3s, padding-top 0.3s;
   }
