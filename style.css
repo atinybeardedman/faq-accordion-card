@@ -89,6 +89,10 @@ main {
       width: 100%;
   }
 
+  .card-image .desktop{
+    display: none;
+  }
+
   .card-title {
       color: var(--primary-text);
       font-weight: 700;
@@ -158,4 +162,22 @@ main {
       visibility: visible;
       color: var(--neutral-text-2);
       transition: visibility 0s 0s, height 0.3s, padding-top 0.3s;
+      padding-top: 1em;
+      color: var(--neutral-text-2)
+  }
+
+  @media screen and (min-width: 1024px) {
+      .card {
+          max-width: 800px;
+          flex-direction: row;
+          padding: 5em;
+      }
+
+      .card-image .desktop{
+        display: inline-block;
+      }
+      .card-image .mobile {
+          display: none;
+      }
+      
   }
