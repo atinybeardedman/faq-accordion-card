@@ -62,7 +62,7 @@ body {
   margin: auto;
   max-width: 325px;
   background: white;
-  /* padding: 2rem 1.5rem; */
+  padding: 2rem 1.5rem;
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -72,38 +72,33 @@ body {
 .card-image {
   flex: 1;
   text-align: center;
-  margin-top: -9rem;
 }
 
 .card-content {
   flex: 1;
 }
 
-/* .illustration {
-  margin-left: -0.5rem;
-  width: 95%;
+.illustrations {
+  background-image: url('./images/illustration-woman-online-mobile.svg'), url('./images/bg-pattern-mobile.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: -.5rem 0, center 90%;
+  margin-top:-8.5rem;
+  height:14rem;
 }
-
-.shadow {
-  margin-top: -5.25rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-} */
 
 .card-image img {
   width: 100%;
 }
 
-/* .card-image .desktop, .desktop-box {
+.desktop-box {
   display: none;
-} */
+}
 
 .card-title {
   color: var(--primary-text);
   font-weight: 700;
   font-size: 30px;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   text-align: center;
 }
 
@@ -168,7 +163,6 @@ body {
   visibility: visible;
   color: var(--neutral-text-2);
   transition: visibility 0s 0s, height 0.3s, padding-top 0.3s;
-  /* padding-top: 1em; */
   color: var(--neutral-text-2);
 }
 
@@ -176,8 +170,7 @@ body {
   .card {
     max-width: 800px;
     flex-direction: row;
-    padding-right: 5em;
-    /* overflow: hidden; */
+    padding: 0 5em 0 0;
   }
 
   .card-title {
@@ -193,20 +186,22 @@ body {
     margin: 0;
   }
 
-  .desktop {
+  .container {
     height: 100%;
     position:relative;
   }
 
-  .desktop .illustrations {
+  .illustrations {
     background-image: url('./images/illustration-woman-online-desktop.svg'), url('./images/bg-pattern-desktop.svg');
     background-size: 110%, 250%;
     background-repeat: no-repeat, no-repeat;
     background-position: -4rem 60%, 105% 65%;
     height: 100%;
+    margin-top: 0;
   }
 
   .desktop-box {
+    display: block;
     position: absolute;
     top: 48%;
     left: -5.75rem;
@@ -216,33 +211,4 @@ body {
     width: 70%;
   }
 
-  /* .illustration {
-    position: absolute;
-    left: -5rem;
-    top: 5rem;
-    width: auto;
-  }
-
-  .shadow {
-    margin: 0;
-
-    position: absolute;
-    left: -25rem;
-    top: -11rem;
-    width: 100%;
-  }
-
-  .desktop-box {
-      display: inline-block;
-    position: absolute;
-    top: calc(50vh - 2.5rem);
-    left: calc(-5.85rem + (100vw - 800px) / 2);
-  } */
-
-  /* .card-image .desktop {
-    display: inline-block;
-  }
-  .card-image .mobile {
-    display: none;
-  } */
 }
